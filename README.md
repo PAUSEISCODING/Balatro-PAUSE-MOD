@@ -9,3 +9,10 @@ This is a first attempt at a modpack. I've never used LUA. This currently has 1 
 
 
 # CURRENTLY WORKING!
+
+
+# How to Use:
+
+drag this file into your mod's folder for balatro. (ENSURE ITS UNZIPPED CORRECTLY)
+
+Windows: Win+R, "%Appdata%", Balatro, Mods.
