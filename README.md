@@ -1,6 +1,6 @@
 # Pause's Pack
 
-This is a first attempt at a modpack. I've never used LUA. This currently has 1 joker in it. soon to have 3 but they seem to cause crashes at the moment.
+This is a first attempt at a modpack. I've never used LUA. This currently has 2 jokers in it. soon to have 3 but they seem to cause crashes at the moment.
 
 
 
