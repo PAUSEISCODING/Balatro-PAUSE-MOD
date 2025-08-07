@@ -1,5 +1,5 @@
 --- STEAMODDED HEADER
---- MOD_NAME: Pause's Jokers and Pack
+--- MOD_NAME: Pause's Jokers
 --- MOD_ID: PAUSESJOKERPACK
 --- MOD_AUTHOR: [PAUSE]
 --- MOD_DESCRIPTION: Some Custom Jokers. Mwhehehehe.
@@ -121,7 +121,7 @@ SMODS.Joker{
         text = {
             'When Blind is selected,',
             '{C:green}1 in 4{} chance to',
-            'create a {C:attention}Negative{} {C:blue}Joker{}',
+            'create a {C:attention}Negative{} {C:blue}Brainstorm{} Joker',
             '{X:mult,C:white}X#1#{} Mult',
             'Gain {C:money}25${} at end of round'
         }
@@ -162,7 +162,7 @@ SMODS.Joker{
 
             if random_num == 1 then
                 -- Success: Create the card
-                local new_card1 = create_card('Joker', G.jokers, nil,nil,nil,nil,'j_joker')
+                local new_card1 = create_card('Joker', G.jokers, nil,nil,nil,nil,'j_brainstorm')
                 new_card1:set_edition('e_negative')
                 new_card1:add_to_deck()
                 G.jokers:emplace(new_card1)
