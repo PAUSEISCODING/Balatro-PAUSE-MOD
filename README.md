@@ -19,7 +19,7 @@ this is basic setup for a mod.
 to make your own mods:
 
 --------------------From Below This Line All Code Required------------------------------
-
+```
 --- STEAMODDED HEADER
 --- MOD_NAME: MOD NAME HERE
 --- MOD_ID: YOURJOKERPACK
@@ -166,7 +166,7 @@ SMODS.Joker{
 ----------------------------------------------
 ------------MOD CODE END----------------------
 
-
+```
 Add a png to assets, in 1x this image should be 71x95px
 scale this up to 142x190px and place it in the 2x folder as well.
 
