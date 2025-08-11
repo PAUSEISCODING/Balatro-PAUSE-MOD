@@ -38,6 +38,15 @@ SMODS.Joker{ --Jack who?
 
     calculate = function(self, card, context)
         if context.end_of_round and context.game_over == false and context.main_eval  then
+                return {
+                    func = function()
+                    card.ability.extra.played = (card.ability.extra.played) + 1
+                    return true
+                end,
+                    message = "+1"
+                }
+        end
+        if context.setting_blind  then
             if (card.ability.extra.played or 0) == 2 then
                 return {
                     func = function()
@@ -54,20 +63,12 @@ SMODS.Joker{ --Jack who?
                     end
                 }))
                     if created_consumable then
-                        card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Crafted!", colour = G.C.SECONDARY_SET.Planet})
+                        card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Created", colour = G.C.SECONDARY_SET.Planet})
                     end
                     return true
                 end,
                         colour = G.C.SECONDARY_SET.Planet
                         }
-                }
-            else
-                return {
-                    func = function()
-                    card.ability.extra.played = (card.ability.extra.played) + 1
-                    return true
-                end,
-                    message = "+1"
                 }
             end
         end

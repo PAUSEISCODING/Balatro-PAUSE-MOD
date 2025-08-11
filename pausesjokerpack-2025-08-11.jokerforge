@@ -115,7 +115,7 @@
     {
       "id": "4c849950-5eed-4f2e-9b79-3bf4aecbc23b",
       "name": "Cheese Toasty",
-      "description": "A {C:attention}Cheese Toasty.{}[s][s]{C:blue}+100{} Chips[s]{C:red}+100{} Mult[s][s]{C:green}1 in 3 Chance{}[s]to {C:red}destroy {}itself[s]at the end of the[s]round.[s][s]When {C:blue}Joker {}is {C:red}destroyed{}[s]gain {C:attention}2 levels{} on most[s]played {C:blue}poker hand{}.",
+      "description": "A {C:attention}Cheese Toasty.{}[s][s]{C:blue}+1000{} Chips[s]{C:red}+1000{} Mult[s][s]{C:green}1 in 2 Chance{}[s]to {C:red}destroy {}itself[s]at the end of the[s]round.[s][s]When {C:blue}Joker {}is {C:red}destroyed{}[s]gain {C:attention}3 levels{} on most[s]played {C:blue}poker hand{}.",
       "imagePreview": "data:image/png;base64,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",
       "overlayImagePreview": "",
       "rarity": 1,
@@ -166,7 +166,7 @@
             {
               "id": "9cbd4328-7747-47c4-8a29-3e7cf95118f1",
               "chance_numerator": 1,
-              "chance_denominator": 3,
+              "chance_denominator": 2,
               "effects": [
                 {
                   "id": "9e62c77a-02fb-458b-b79b-e68c3cc4d6ac",
@@ -179,9 +179,8 @@
                   "type": "level_up_hand",
                   "params": {
                     "hand_selection": "most",
-                    "value": 2
-                  },
-                  "customMessage": "Upgrade!"
+                    "value": 3
+                  }
                 }
               ]
             }
@@ -194,7 +193,7 @@
       ],
       "userVariables": [],
       "placeholderCreditIndex": 32,
-      "jokerKey": "cheesetoasty",
+      "jokerKey": "cheesetoast",
       "hasUserUploadedImage": true
     },
     {
@@ -592,16 +591,16 @@
           }
         },
         {
-          "id": "a32e0ab2-087c-4843-bc51-04b27e83798b",
-          "trigger": "round_end",
+          "id": "fd5441af-b5a4-4dac-be59-e9637aa32092",
+          "trigger": "blind_selected",
           "blueprintCompatible": true,
           "conditionGroups": [
             {
-              "id": "3f533c56-89d3-4774-8067-20bed1055c25",
+              "id": "1f702f9e-bc6f-45a0-8ba9-30fe62f75e27",
               "operator": "and",
               "conditions": [
                 {
-                  "id": "cf3629f1-ded7-47ad-b710-fbe385311011",
+                  "id": "3f0b684a-40ac-43f0-83fa-9d5cecbc2565",
                   "type": "internal_variable",
                   "negate": false,
                   "params": {
@@ -615,7 +614,7 @@
           ],
           "effects": [
             {
-              "id": "c50bb420-f3af-4251-83f7-7abf1abbf4ee",
+              "id": "27055acd-135f-47c5-8826-36bdcf9f0eea",
               "type": "modify_internal_variable",
               "params": {
                 "variable_name": "played",
@@ -625,19 +624,19 @@
               "customMessage": "Reset!"
             },
             {
-              "id": "3ce72136-d21d-495f-abf5-3af269e5bdf3",
+              "id": "3196fa72-fe3b-43b9-b5ec-99583b27d5aa",
               "type": "create_consumable",
               "params": {
                 "set": "Planet",
                 "specific_card": "c_pausespack_craftingtable",
                 "is_negative": "negative"
               },
-              "customMessage": "Crafted!"
+              "customMessage": "Created"
             }
           ],
           "randomGroups": [],
           "position": {
-            "x": 783,
+            "x": 812,
             "y": 183.5
           }
         }
@@ -2061,5 +2060,5 @@
   "boosters": [],
   "enhancements": [],
   "version": "1.0.0",
-  "exportedAt": "2025-08-11T16:24:16.360Z"
+  "exportedAt": "2025-08-11T16:33:23.759Z"
 }
