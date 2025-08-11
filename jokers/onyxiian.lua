@@ -23,7 +23,7 @@ SMODS.Joker{ --Onyxiian
         }
     },
     pos = {
-        x = 3,
+        x = 8,
         y = 1
     },
     cost = 4,

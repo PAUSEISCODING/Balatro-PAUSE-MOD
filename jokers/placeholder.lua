@@ -19,14 +19,16 @@ SMODS.Joker{ --Placeholder
             [7] = 'amount of {C:blue}Chips{} added',
             [8] = 'per {C:green}Reroll {}',
             [9] = '',
-            [10] = '{X:blue,C:white}+#1#{} Chips'
+            [10] = '{X:blue,C:white}+#1#{} Chips',
+            [11] = '',
+            [12] = '{C:inactive}(Not Applying to Booster Packs){}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 4,
+        x = 9,
         y = 1
     },
     cost = 4,
@@ -49,7 +51,7 @@ SMODS.Joker{ --Placeholder
                     card.ability.extra.chipsadded = (card.ability.extra.chipsadded) + card.ability.extra.chipstoadd
                     return true
                 end,
-                    message = "+2"
+                    message = "$chipsadded"
                 }
         end
         if context.cardarea == G.jokers and context.joker_main  then
@@ -62,7 +64,8 @@ SMODS.Joker{ --Placeholder
                     func = function()
                     card.ability.extra.chipstoadd = (card.ability.extra.chipstoadd) + 1
                     return true
-                end
+                end,
+                    message = "+1"
                 }
         end
     end,

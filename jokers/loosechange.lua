@@ -26,8 +26,8 @@ SMODS.Joker{ --Loose Change
         }
     },
     pos = {
-        x = 9,
-        y = 0
+        x = 3,
+        y = 1
     },
     cost = 5,
     rarity = 2,

@@ -1,7 +1,7 @@
 SMODS.Consumable {
     key = 'pauseasecond',
     set = 'Spectral',
-    pos = { x = 0, y = 0 },
+    pos = { x = 1, y = 0 },
     config = { extra = {
         joker_slots_value = 3,
         copy_amount = 1,

@@ -15,7 +15,7 @@ SMODS.Joker{ --Missing_Texture_0x0754
         }
     },
     pos = {
-        x = 1,
+        x = 5,
         y = 1
     },
     cost = 4,

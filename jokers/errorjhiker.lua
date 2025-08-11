@@ -19,7 +19,7 @@ SMODS.Joker{ --ERROR-j_hiker
         }
     },
     pos = {
-        x = 3,
+        x = 4,
         y = 0
     },
     cost = 6,

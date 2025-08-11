@@ -20,7 +20,7 @@ SMODS.Joker{ --Img.png
         }
     },
     pos = {
-        x = 5,
+        x = 7,
         y = 0
     },
     cost = 5,

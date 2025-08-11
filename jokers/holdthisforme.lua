@@ -17,7 +17,7 @@ SMODS.Joker{ --Hold this for me
         }
     },
     pos = {
-        x = 4,
+        x = 5,
         y = 0
     },
     cost = 8,

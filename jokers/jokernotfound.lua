@@ -20,8 +20,8 @@ SMODS.Joker{ --Joker Not Found
         }
     },
     pos = {
-        x = 7,
-        y = 0
+        x = 1,
+        y = 1
     },
     cost = 5,
     rarity = 2,

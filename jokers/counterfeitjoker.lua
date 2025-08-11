@@ -22,7 +22,7 @@ SMODS.Joker{ --Counterfeit Joker
         }
     },
     pos = {
-        x = 1,
+        x = 2,
         y = 0
     },
     cost = 5,
