@@ -1,0 +1,17 @@
+{
+  "id": "pausesjokerpack",
+  "name": "Pause's Joker Pack",
+  "author": [
+    "PAUSE"
+  ],
+  "description": "Some Custom Jokers. Mwhehehehe",
+  "prefix": "pausespack",
+  "main_file": "main.lua",
+  "version": "1.0.0",
+  "priority": 0,
+  "badge_colour": "FF1111",
+  "badge_text_colour": "FFFFFF",
+  "dependencies": [
+    "Steamodded (>=1.0.0~BETA-0711a)"
+  ]
+}
