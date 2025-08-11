@@ -20,8 +20,8 @@ SMODS.Joker{ --Placeholder
         }
     },
     pos = {
-        x = 2,
-        y = 1
+        x = 0,
+        y = 0
     },
     cost = 4,
     rarity = 1,
@@ -30,7 +30,7 @@ SMODS.Joker{ --Placeholder
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'Joker',
 
     loc_vars = function(self, info_queue, card)
         return {vars = {card.ability.extra.chipsadded}}
@@ -42,7 +42,8 @@ SMODS.Joker{ --Placeholder
                     func = function()
                     card.ability.extra.chipsadded = (card.ability.extra.chipsadded) + 2
                     return true
-                end
+                end,
+                    message = "+2"
                 }
         end
         if context.cardarea == G.jokers and context.joker_main  then
