@@ -7,12 +7,12 @@
 ----------------------------------------------
 ------------MOD CODE -------------------------
 
--- SMODS.Atlas{
---     key = 'pause_pack_sprite',
---     path = 'Jokers.png',
---     px = 71,
---     py = 95
--- }
+SMODS.Atlas{
+    key = 'test',
+    path = 'Jokers.png',
+    px = 71,
+    py = 95
+}
 
 SMODS.Atlas{
     key = 'Joker1',
@@ -40,6 +40,78 @@ SMODS.Atlas{
     path = 'Josh.png',
     px = 71,
     py = 95
+}
+
+SMODS.Joker{
+    key = 'TestJoker',
+    loc_txt = {
+        name = '{C:attention}Josh...{}',
+        text = {
+            'When Blind is selected,',
+            '{C:green}1 in 4{} chance to',
+            'create a {C:attention}Negative{} {C:blue}Hiker{} Joker',
+            '{X:mult,C:white}X#1#{} Mult',
+            'Gain {C:money}6${} at end of round'
+        }
+    },
+    atlas = 'test',
+    rarity = 3,
+    cost = 5,
+    unlocked = true,
+    discovered = true,
+    blueprint_compat = true,
+    eternal_compat = false,
+    perishable_compat = false,
+    pos = {x = 0, y = 0},
+    config = {
+        extra = {
+            Xmult = 4.2
+        }
+    },
+    loc_vars = function(self, info_queue, center)
+        info_queue[#info_queue+1] = G.P_CENTERS.j_joker
+        return {vars = {center.ability.extra.Xmult}}
+    end,
+    check_for_unlock = function(self, args)
+        unlock_card(self)
+    end,
+    calculate = function(self,card,context)
+        if context.joker_main then
+            return {
+                card = card,
+                Xmult_mod = card.ability.extra.Xmult,
+                message = 'X' .. card.ability.extra.Xmult,
+                colour = G.C.MULT
+            }
+        end
+
+        if context.setting_blind then
+            local random_num = math.random(1, 4)
+
+            if random_num == 1 then
+                -- Success: Create the card
+                local new_card1 = create_card('Joker', G.jokers, nil,nil,nil,nil,'j_hiker')
+                new_card1:set_edition('e_negative')
+                new_card1:add_to_deck()
+                G.jokers:emplace(new_card1)
+                -- Optionally, you could add a success message here too if desired, e.g.,
+                return { card = card, message = 'Created!', colour = G.C.BLUE }
+            else
+                -- Failure: Card is not created, display a message
+                return {
+                    card = card,
+                    message = 'Nope!',
+                    colour = G.C.ATTENTION -- Assuming 'ATTENTION' is the correct key for red/orange
+                }
+            end
+        end
+    end,
+    in_pool = function(self,wawa,wawa2)
+        return true
+    end,
+    calc_dollar_bonus = function(self,card)
+        return 6
+    end,
 }
 
 SMODS.Joker{
