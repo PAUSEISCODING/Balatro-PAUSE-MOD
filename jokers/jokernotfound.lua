@@ -20,7 +20,7 @@ SMODS.Joker{ --Joker Not Found
         }
     },
     pos = {
-        x = 5,
+        x = 7,
         y = 0
     },
     cost = 5,
@@ -39,9 +39,11 @@ SMODS.Joker{ --Joker Not Found
                 }
         end
         if context.pre_discard  then
+            if G.GAME.dollars > to_big(4) then
                 return {
-                    dollars = card.ability.extra.dollars2
+                    dollars = -card.ability.extra.dollars2
                 }
+            end
         end
     end
 }

@@ -23,7 +23,7 @@ SMODS.Joker{ --Zesty Shae
         }
     },
     pos = {
-        x = 4,
+        x = 6,
         y = 1
     },
     cost = 4,

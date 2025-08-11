@@ -22,8 +22,8 @@ SMODS.Joker{ --Missing Joker
         }
     },
     pos = {
-        x = 8,
-        y = 0
+        x = 0,
+        y = 1
     },
     cost = 5,
     rarity = 2,

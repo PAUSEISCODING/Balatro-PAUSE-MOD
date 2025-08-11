@@ -3,25 +3,31 @@ SMODS.Joker{ --Placeholder
     config = {
         extra = {
             reroll_amount = 10000000000000000,
-            chipsadded = 2
+            chipsadded = 2,
+            chipstoadd = 2
         }
     },
     loc_txt = {
         ['name'] = 'Placeholder',
         ['text'] = {
             [1] = 'Free {C:green}Rerolls{} Forever.',
-            [2] = 'Each {C:green}Reroll{} adds 2 Chips',
+            [2] = 'Each {C:green}Reroll{} adds {X:blue,C:white}#2#{} Chips',
             [3] = 'to this card.',
             [4] = '',
-            [5] = '{X:blue,C:white}+#1#{} Chips'
+            [5] = 'Buying any {C:attention}card{} from',
+            [6] = 'the shop adds to the',
+            [7] = 'amount of {C:blue}Chips{} added',
+            [8] = 'per {C:green}Reroll {}',
+            [9] = '',
+            [10] = '{X:blue,C:white}+#1#{} Chips'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 0,
-        y = 0
+        x = 4,
+        y = 1
     },
     cost = 4,
     rarity = 1,
@@ -30,17 +36,17 @@ SMODS.Joker{ --Placeholder
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'Joker',
+    atlas = 'CustomJokers',
 
     loc_vars = function(self, info_queue, card)
-        return {vars = {card.ability.extra.chipsadded}}
+        return {vars = {card.ability.extra.chipsadded, card.ability.extra.chipstoadd}}
     end,
 
     calculate = function(self, card, context)
         if context.reroll_shop  then
                 return {
                     func = function()
-                    card.ability.extra.chipsadded = (card.ability.extra.chipsadded) + 2
+                    card.ability.extra.chipsadded = (card.ability.extra.chipsadded) + card.ability.extra.chipstoadd
                     return true
                 end,
                     message = "+2"
@@ -49,6 +55,14 @@ SMODS.Joker{ --Placeholder
         if context.cardarea == G.jokers and context.joker_main  then
                 return {
                     chips = card.ability.extra.chipsadded
+                }
+        end
+        if context.buying_card  then
+                return {
+                    func = function()
+                    card.ability.extra.chipstoadd = (card.ability.extra.chipstoadd) + 1
+                    return true
+                end
                 }
         end
     end,

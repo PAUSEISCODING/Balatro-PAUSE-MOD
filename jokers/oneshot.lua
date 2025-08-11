@@ -29,7 +29,7 @@ SMODS.Joker{ --One Shot
         }
     },
     pos = {
-        x = 0,
+        x = 2,
         y = 1
     },
     cost = 14,
